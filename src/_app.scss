@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #f4f5f6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  font-weight: 500;
+}
+p {
+  color: rgb(145, 145, 145);
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  color: $white-color;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-black {
+  background: $black-color;
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid $white-color;
+}
+.link--btn {
+  border: none;
+  padding: 0.8rem 0;
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: rgb(70, 69, 69);
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.step-title {
+  font-size: 3rem;
+  color: $white-color;
+}
+.aka--awesome--services,
+.aka--awesome--steps,
+.aka--awesome--clients,
+.aka--awesome--achievements,
+.aka--awesome--footer,
+.aka--awesome--step--one,
+.aka--awesome--step--two {
+  height: 100vh;
+}
+
+.aka--awesome--title {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}

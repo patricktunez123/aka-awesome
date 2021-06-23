@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.aka--awesome--footer {
+  background: $secondary-color;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  .aka--awesome--footer-bottom {
+    background: $black-color;
+    width: 100%;
+    padding: 4rem 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

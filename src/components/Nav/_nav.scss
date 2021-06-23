@@ -1,0 +1,38 @@
+@import "../../variables";
+
+.aka--awesome--nav {
+  background: $white-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 5px #ccc;
+  z-index: 999;
+
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li,
+    button {
+      list-style: none;
+      margin-left: 1rem;
+    }
+    a {
+      text-decoration: none;
+      color: initial;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+  }
+}
