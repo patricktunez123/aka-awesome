@@ -5,6 +5,7 @@
   //   width: 100vw;
 
   .aka--awesome--hero {
+    background: #1c2834;
     background: url(../../images/home-bg.svg);
     height: 100vh;
     background-size: cover;
@@ -13,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-right: 0.3rem solid $primary-color;
 
     .aka--awesome--hero--left {
       display: flex;
@@ -99,8 +101,86 @@
   }
 
   .aka--awesome--clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+
+    .aka--awesome--clients--left {
+      background: #f4f5f6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+      align-self: flex-start;
+    }
+
+    .aka--awesome--clients--left .row div {
+      padding: 64px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .aka--awesome--clients--left .row .white-col {
+      background: #fff;
+    }
+    .aka--awesome--clients--left .row img {
+      width: 108px;
+      height: 72px;
+      object-fit: contain;
+    }
+    // .aka--awesome--clients--left .row div:nth-child(2) {
+    //   background: #fff;
+    // }
+    .aka--awesome--clients--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex: 1;
+
+      .client--info {
+        display: flex;
+        flex-direction: column;
+        h6 {
+          font-weight: bold;
+        }
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
   }
   .aka--awesome--achievements {
     background: $white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    .aka--awesome--achievements--left {
+      flex-basis: 2;
+    }
+    .aka--awesome--achievements--right {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 1;
+
+      .card {
+        border-left: 10px double $primary-color;
+        border-right: 10px double $primary-color;
+        border-bottom: 0;
+        border-top: 0;
+        border-radius: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        padding: 5rem 0;
+        // flex-basis: 1;
+        width: 30%;
+        h6 {
+        }
+      }
+    }
   }
 }

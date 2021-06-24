@@ -42,7 +42,6 @@ p {
 .link--btn {
   border: none;
   padding: 0.8rem 0;
-  font-weight: bold;
   background: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -71,4 +70,16 @@ p {
   font-size: 2.1rem;
   font-weight: bold;
   margin: 2rem 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  background: $secondary-color !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
 }
